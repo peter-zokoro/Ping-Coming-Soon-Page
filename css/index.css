@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&display=swap");
+
+* {
+  font-family: "Libre Franklin", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.body__container {
+  margin: 30px 50px 10px 50px;
+}
+.logo {
+  width: 4rem;
+  margin: 10px;
+}
+.logo__container {
+  text-align: center;
+}
+h1 {
+  margin: 0px 20px 0px 20px;
+}
+.styled__text {
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+.sub {
+  padding: 10px 0 0 0;
+  margin-bottom: 20px;
+}
+.message {
+  text-align: center;
+}
+.form__container {
+  display: block;
+  text-align: center;
+  margin: 10px 0 30px 0;
+}
+.email {
+  width: 20rem;
+  padding: 11px;
+  padding-left: 20px;
+  border-radius: 30px;
+  border-width: 0.5px;
+  border-color: hsla(223, 100%, 88%, 0.8);
+}
+::placeholder {
+  color: hsl(223, 100%, 88%);
+}
+#error-id {
+  color: hsl(354, 100%, 66%);
+  padding: 5px;
+  font-size: 10px;
+  transition: all 0.5s ease;
+}
+button {
+  width: 10rem;
+  padding: 11px;
+  border-radius: 30px;
+  background-color: hsl(223, 87%, 63%);
+  border: none;
+  color: whitesmoke;
+  font-size: 12px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.illus__container {
+  text-align: center;
+}
+.illus {
+  width: 30rem;
+}
+.icons {
+  color: hsl(223, 67%, 74%);
+  font-size: 13px;
+  text-align: center;
+}
+i.fab {
+  margin: 20px 15px 20px 15px;
+}
+.fab:hover {
+  color: white;
+  background-color: hsl(223, 72%, 57%);
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px 15px 5px 15px;
+}
+.copyright {
+  text-align: center;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 590px) {
+  .logo {
+    margin: 50px 0 20px 0;
+    text-align: center;
+  }
+  .body__container {
+    margin: 0;
+  }
+  .logo {
+    width: 4rem;
+    padding: 30px 0 10px 0;
+  }
+
+  h1 {
+    font-size: 26px;
+    padding: 10px 0 11px 0;
+  }
+
+  .sub {
+    padding: 10px 0 0 0;
+    margin-bottom: 30px;
+  }
+  .email {
+    width: 18rem;
+    padding: 11px;
+    padding-left: 20px;
+    border-radius: 30px;
+    border-width: 0.5px;
+    border-color: hsla(223, 100%, 88%, 0.8);
+  }
+
+  button {
+    width: 18rem;
+    padding: 12px;
+    border-radius: 30px;
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+    color: whitesmoke;
+    font-size: 12px;
+    font-weight: 300;
+    cursor: pointer;
+    margin: 10px 0 40px 0;
+  }
+  .illus {
+    width: 24rem;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  i.fab {
+    margin: 20px 15px 30px 15px;
+  }
+}

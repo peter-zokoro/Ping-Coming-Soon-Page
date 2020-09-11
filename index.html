@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/bf88b998e8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function validate() {
+        var notify = document.getElementsByClassName("email");
+        var errorText = document.getElementsById("error-id");
+        atpos = notify.indexOf("@");
+        dotpos = notify.lastIndexOf(".");
+
+        if (atpos < 1 || dotpos - atpos < 2) {
+          alert("Please enter correct email ID");
+          document.myForm.EMail.focus();
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="body__container">
+      <div class="logo__container">
+        <img src="./images/logo.svg" alt="Logo" class="logo" />
+      </div>
+
+      <div class="message">
+        <h1>
+          <span class="styled__text">We are launching</span>
+          soon!
+        </h1>
+        <p style="font-size: 14px" class="sub">Subscribe and get notified</p>
+      </div>
+
+      <div class="form__container">
+        <form onsubmit="return validate()" name="myForm">
+          <input
+            type="email"
+            name="email"
+            class="email"
+            placeholder="Your email address"
+          />
+          <button class="btn">Notify Me</button>
+          <p id="error-id"></p>
+        </form>
+      </div>
+
+      <div class="illus__container">
+        <img
+          src="./images/illustration-dashboard.png"
+          alt="body_image"
+          class="illus"
+        />
+      </div>
+
+      <p class="icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+      </p>
+    </div>
+
+    <div class="copyright">&copy; Copyright Ping. All rights reserved.</div>
+    <br />
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/Zokkie-Mane">Peter Zokoro</a>.
+      </p>
+    </footer>
+  </body>
+</html>
